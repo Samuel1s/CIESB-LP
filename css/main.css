@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --red-1: #c4302b;
+  --grey-1: #2a2a2e;
+  --grey-2: #6f6f7a;
+  --blue-1: #3b5998;
+  --blue-2: #3f729b;
+  --blue-3: #2f49f8;
+  --pink-1: #f8dfe2;
+  --green-1: #38e675;
+  --white-1: #f8f8ff;
+  --silver-1: #f2f2f2;
+  --yellow-1: #fad733;
+  --orange-1: #fa4c33;
+  --purple-1: #8a7bb3;
+  --purple-2: #531a5e;
+  --purple-3: #40328a;
+}
+
+/* -- Definições gerais. -- */
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background: var(--yellow-1);
+  color: white;
+}
+
+/* -- Header -- */
+header {
+  min-height: 90px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: white;
+}
+
+nav a {
+  margin: 1em;
+  transition: all 250ms ease-out;
+}
+
+#logo {
+  padding: 0;
+  height: 2em;
+}
+
+#logo > img {
+  display: block;
+  margin: auto;
+  height: 1.5em;
+}
+
+.nav-item:active {
+  color: red;
+}
+
+/* -- Sticky nav. -- */
+.sticky a {
+  margin: 0.25em 1em;
+  transition: all 250ms ease-out;
+}
+
+/* -- Main and Basics Style. -- */
+main {
+  margin: 0 auto;
+  max-width: 100vw;
+  text-align: justify;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+h2 {
+  font-weight: 400;
+  color: var(--purple-2);
+}
+
+h3 {
+  text-transform: uppercase;
+  color: var(--purple-1);
+  font-weight: 400;
+}
+
+h4 {
+  color: var(--purple-1);
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+  line-height: 27px;
+  color: var(--grey-1);
+  text-align: justify;
+}
+
+section {
+    width: 100vw;
+}
+
+span {
+  font-weight: 500;
+  color: var(--grey-1);
+}
+
+#year {
+  color: white;
+}
+
+.align-dots {
+  bottom: 0;
+  width: 100%;
+  margin: 0.5em 0;
+  position: absolute;
+  text-align: center;
+}
+
+.whatsapp-button {
+  right: 15px;
+  bottom: 15px;
+  position: fixed;
+  border-radius: 50%;
+}
+
+.whatsapp-button > img {
+  width: 50px;
+  height: 50px;
+}
+
+.line {
+  height: 2px;
+  width: 40px;
+  padding: 0px;
+  margin: 14px 0px;
+  background-color: red;
+}
+
+.my-fit-img-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mark-text {
+  color: var(--purple-3);
+}
+
+.btn-color-wpp {
+  color: white;
+  font-weight: 600;
+  font-size: larger;
+  background: var(--green-1);
+}
+
+.btn-color-wpp:hover {
+  color: var(--purple-2);
+}
+
+/* -- Section 1 - Banner Slider -- */
+
+#banner-slider {
+  margin: 0 auto;
+}
+
+/* -- Section 2 - Who are us. -- */
+
+#about {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/ciesb-backgrounds/who-are-us.png);
+}
+
+#description-content {
+  padding: 1em;
+  border-radius: 8px;
+  background-color: rgba(248, 248, 255, 0.7);
+  box-shadow: 2px -2px 8px 0px var(--purple-1);
+}
+
+#team {
+  margin: 1em;
+  width: 400px;
+  height: 400px;
+  shape-outside: margin-box;
+  border: 1px solid var(--purple-1);
+}
+
+/* -- Section 3 - Our mission. --*/
+#our-mission {
+  background-color: rgba(138, 123, 179, 0.1);
+}
+
+/* -- Section 4 - Our history. --*/
+#our-history {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/ciesb-backgrounds/our-history.png);
+}
+
+#children {
+  padding: 3em 2em;
+  background-color: rgb(250, 76, 51, 0.9);
+}
+
+#history {
+  padding: 1em;
+  border-radius: 8px;
+  background-color: rgba(248, 248, 255, 0.9);
+  box-shadow: 2px -2px 8px 0px var(--purple-1);
+}
+
+/* -- Section 5 - Differential. -- */
+#differential {
+  perspective: 1500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/ciesb-backgrounds/differential.png);
+}
+
+.card-flip > div {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  transition: transform 300ms;
+  backface-visibility: hidden;
+  transition-timing-function: linear;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+  background-color: rgba(47, 73, 248, 0.9);
+}
+
+.card-front h4 {
+  color: white;
+  font-weight: bold;
+}
+
+.color-icon {
+  color: var(--yellow-1);
+}
+
+.card-back {
+  top: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+/* -- Section 6 - structure -- */
+#structure {
+  background: linear-gradient(-90deg, var(--purple-1) 50%, var(--silver-1) 50%);
+}
+
+#structure-description {
+  background-color: white;
+}
+
+.my-fit-carousel-content {
+  width: 100%;
+  height: 400px;
+}
+
+/* -- Section 7 - Methodology -- */
+#methodology {
+  background-color: var(--pink-1);
+}
+
+/* -- Section 8 - Methodology Pestalozzi -- */
+#methodology-pestalozzi {
+  background: linear-gradient(
+    -70deg,
+    var(--silver-1) 50%,
+    rgba(47, 73, 248, 0.3) 50%
+  );
+}
+
+#list-tab {
+  background-color: white;
+  box-shadow: 2px -2px 8px 0px var(--purple-1);
+}
+
+#nav-tabContent {
+  height: 100%;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px -2px 8px 0px var(--purple-1);
+}
+
+/* -- Section 9 - Polyglot --*/
+#why-polyglot {
+  background-color: var(--white-1);
+}
+
+#polyglot-description {
+  left: -50px;
+  padding: 1em;
+  position: relative;
+  background-color: white;
+  box-shadow: 2px -2px 8px 0px var(--purple-1);
+}
+
+/* -- Section 10 - Activities. -- */
+#activities {
+  background: rgba(138, 123, 179, 0.1);
+}
+
+.my-activities-img-container {
+  height: 300px;
+}
+
+.card-text {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+/* -- Section 11 - Testimonial -- */
+#testimonial {
+  padding: 2em 0;
+  background: linear-gradient(
+    -100deg,
+    var(--silver-1) 50%,
+    var(--purple-1) 50%
+  );
+}
+
+.single-box {
+  padding: 1em;
+  background: var(--grey-1);
+}
+
+.img-text {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+.img-text h2 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.img-text p {
+  max-height: 160px;
+  overflow-y: scroll;
+  font-size: 14px;
+  color: white;
+}
+
+.img-area {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid var(--purple-1);
+}
+
+#testemonial-indicators {
+  bottom: -50px;
+}
+
+#my-fit-arrow-left {
+  left: -50px;
+}
+
+#my-fit-arrow-right {
+  right: -50px;
+}
+
+/* -- Section 12 - FAQ's -- */
+
+.my-faq-card-color {
+  background-color: rgb(250, 87, 69);
+}
+
+.card-header button {
+  color: white;
+}
+
+.card-header button:hover {
+  text-decoration: none;
+  color: var(--purple-2);
+}
+
+.card-header button:focus {
+  color: var(--purple-2);
+}
+
+.card-body {
+  color: white;
+}
+
+/* -- Modal Dialog. -- */
+.modal-content {
+}
+
+/* -- Footer. -- */
+
+footer {
+  padding: 2em;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  background-color: var(--grey-1);
+}
+
+footer p {
+  margin: 0;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  text-align: end;
+  list-style-type: none;
+}
+
+footer a:hover {
+  color: var(--orange-1);
+}
+
+#line-footer {
+  width: 100%;
+  height: 1px;
+  margin: 14px 0px;
+  background-color: var(--silver-1);
+}
+
+.footer-content-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icons {
+  text-align: end;
+}
+
+.social-icons a {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  margin-right: 8px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 100%;
+  display: inline-block;
+  color: var(--grey-2);
+  transition: all 0.2s linear;
+  background-color: var(--silver-1);
+}
+
+.youtube:hover {
+  color: white;
+  background-color: var(--red-1);
+}
+
+.facebook:hover {
+  color: white;
+  background-color: var(--blue-1);
+}
+
+.instagram:hover {
+  color: white;
+  background-color: var(--blue-2);
+}
+
+/* -- Media Queries. -- */
+@media (min-width: 320px) and (max-width: 576px) {
+  h2,
+  h3,
+  h4 {
+    text-align: start;
+  }
+
+  /* -- Section 2 -- */
+  #team {
+    width: 250px;
+    height: 250px;
+  }
+
+  #team img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* -- Section 5 -- */
+  #differential {
+    perspective: none;
+  }
+
+  /* -- Section 8 -- */
+  #pestalozzi-description {
+    height: 220px;
+    padding-top: 0.5em;
+  }
+
+  /* -- Section 9 -- */
+  #polyglot-description {
+    left: 0;
+    padding-top: 0.5em;
+  }
+
+  /*-- Footer --*/
+  footer ul {
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  .footer-content-text {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    padding-top: 1em;
+    text-align: center;
+  }
+}
