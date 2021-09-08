@@ -10,6 +10,7 @@
   --blue-3: #2f49f8;
   --pink-1: #f8dfe2;
   --green-1: #38e675;
+  --green-2: #69cdcf;
   --white-1: #f8f8ff;
   --silver-1: #f2f2f2;
   --yellow-1: #fad733;
@@ -44,6 +45,7 @@ nav {
 nav a {
   margin: 1em;
   transition: all 250ms ease-out;
+  -webkit-transition: all 250ms ease-out;
 }
 
 #logo {
@@ -65,6 +67,7 @@ nav a {
 .sticky a {
   margin: 0.25em 1em;
   transition: all 250ms ease-out;
+  -webkit-transition: all 250ms ease-out;
 }
 
 /* -- Main and Basics Style. -- */
@@ -98,10 +101,6 @@ p {
   line-height: 27px;
   color: var(--grey-1);
   text-align: justify;
-}
-
-section {
-    width: 100vw;
 }
 
 span {
@@ -160,12 +159,6 @@ span {
 
 .btn-color-wpp:hover {
   color: var(--purple-2);
-}
-
-/* -- Section 1 - Banner Slider -- */
-
-#banner-slider {
-  margin: 0 auto;
 }
 
 /* -- Section 2 - Who are us. -- */
@@ -236,10 +229,12 @@ span {
   transition: transform 300ms;
   backface-visibility: hidden;
   transition-timing-function: linear;
+  -webkit-transition: transform 300ms;
 }
 
 .card-front {
   transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
   background-color: rgba(47, 73, 248, 0.9);
 }
 
@@ -256,14 +251,17 @@ span {
   top: 0;
   position: absolute;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .card-flip:hover .card-front {
   transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
 }
 
 .card-flip:hover .card-back {
   transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
 
 /* -- Section 6 - structure -- */
@@ -332,7 +330,7 @@ span {
 
 .card-text {
   max-height: 200px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 /* -- Section 11 - Testimonial -- */
@@ -368,7 +366,7 @@ span {
 
 .img-text p {
   max-height: 160px;
-  overflow-y: scroll;
+  overflow-y: auto;
   font-size: 14px;
   color: white;
 }
@@ -417,8 +415,6 @@ span {
 }
 
 /* -- Modal Dialog. -- */
-.modal-content {
-}
 
 /* -- Footer. -- */
 
@@ -479,6 +475,7 @@ footer a:hover {
   color: var(--grey-2);
   transition: all 0.2s linear;
   background-color: var(--silver-1);
+  -webkit-transition: all 0.2s linear;
 }
 
 .youtube:hover {
@@ -503,14 +500,15 @@ footer a:hover {
   h4 {
     text-align: start;
   }
+  /* -- Section 1 -- */
+  #banner-slider img {
+    height: 220px;
+  }
 
   /* -- Section 2 -- */
   #team {
     width: 250px;
     height: 250px;
-  }
-
-  #team img {
     display: block;
     margin: 0 auto;
   }
