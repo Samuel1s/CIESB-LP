@@ -1,4 +1,5 @@
 // jQuery - Using with Bootstrap.
+let check = false
 
 /* -- Carousel Timeout -- */
 $('.carousel').carousel({
@@ -6,11 +7,25 @@ $('.carousel').carousel({
 })
 
 /* -- Open Dialog -- */
+$('#enroll-button').on('click', function(){
+    check = true
+})
+
 $(document).ready(function () {
     setTimeout(function() {
-        $('#my-modal-dialog').modal('show')
+        if(check !== true) {
+            $('#my-modal-dialog').modal('show')
+        }
     }, 10000)
+})
+
+/* -- Submit Dialog -- */
+$('#mc-embedded-subscribe').submit(function(e) {
+    e.preventDefault()
+        $('#my-modal-dialog').modal('hide')
+    return false
 })
 
 /* -- Droping Collapse -- */
 $('.collapse').collapse()
+
