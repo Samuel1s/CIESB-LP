@@ -19,13 +19,6 @@ $(document).ready(function () {
     }, 10000)
 })
 
-/* -- Submit Dialog -- */
-$('#mc-embedded-subscribe').submit(function(e) {
-    e.preventDefault()
-        $('#my-modal-dialog').modal('hide')
-    return false
-})
-
 /* -- Droping Collapse -- */
 $('.collapse').collapse()
 

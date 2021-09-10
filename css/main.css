@@ -414,7 +414,7 @@ span {
 #mc_embed_signup {
   background: #fff;
   clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 #enroll-button {
@@ -431,6 +431,15 @@ span {
   border: 1px solid var(--orange-1);
 }
 
+input:required:invalid {
+  color: var(--red-1);
+  outline-color:  var(--red-1);
+}
+
+input:required:valid { 
+  color: black;
+  outline-color: var(--blue-3); 
+}
 /* -- Footer. -- */
 
 footer {
