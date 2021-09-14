@@ -51,8 +51,7 @@
     <!-- End Facebook Pixel Code -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-206855008-2'>
-    </script>
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-206855008-2'></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -61,10 +60,29 @@
         gtag('config', 'UA-206855008-2');
     </script>
 
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5JP25MT');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <title>CIESB</title>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JP25MT" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Masthead-->
     <header>
         <nav class='navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar'>
@@ -95,7 +113,8 @@
                         <a class='nav-link' href='#testimonial'>Depoimentos</a>
                     </li>
                     <li class='nav-item'>
-                        <a id='enroll-button' class='nav-link' href='#' data-toggle='modal' data-target='#my-modal-dialog'>Pré-Matrícula</a>
+                        <a id='enroll-button' class='nav-link' href='#' data-toggle='modal'
+                            data-target='#my-modal-dialog'>Pré-Matrícula</a>
                     </li>
                 </ul>
             </div>
@@ -952,21 +971,25 @@
                                 <div class='mc-field-group w-100'>
                                     <label for='mce-EMAIL'>Email<span class='asterisk'>*</span>
                                     </label>
-                                    <input type='email' value='' name='EMAIL' class='required email' id='mce-EMAIL' required>
+                                    <input type='email' value='' name='EMAIL' class='required email' id='mce-EMAIL'
+                                        required>
                                 </div>
                                 <div class='d-flex flex-md-row justify-content-between'>
                                     <div class='mc-field-group'>
                                         <label for='mce-FNAME'>Nome<span class='asterisk'>*</span></label>
-                                        <input type='text' value='' name='FNAME' class='' id='mce-FNAME' pattern='^[A-Za-z]+$' required>
+                                        <input type='text' value='' name='FNAME' class='' id='mce-FNAME'
+                                            pattern='^[A-Za-z]+$' required>
                                     </div>
                                     <div class='mc-field-group pl-1'>
                                         <label for='mce-LNAME'>Sobrenome<span class='asterisk'>*</span></label>
-                                        <input type='text' value='' name='LNAME' class='' id='mce-LNAME' pattern='^[A-Za-z]+$' required>
+                                        <input type='text' value='' name='LNAME' class='' id='mce-LNAME'
+                                            pattern='^[A-Za-z]+$' required>
                                     </div>
                                 </div>
                                 <div class='mc-field-group w-100'>
                                     <label for='mce-PHONE'>Telefone de contato<span class='asterisk'>*</span></label>
-                                    <input type='tel' name='PHONE' class='' value='' id='mce-PHONE' pattern='^[0-9]+$' required>
+                                    <input type='tel' name='PHONE' class='' value='' id='mce-PHONE' pattern='^[0-9]+$'
+                                        required>
                                 </div>
                                 <div id='mce-responses' class='clear'>
                                     <div class='response' id='mce-error-response' style='display:none'></div>
