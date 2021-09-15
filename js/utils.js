@@ -16,7 +16,7 @@ $(document).ready(function () {
         if(check !== true) {
             $('#my-modal-dialog').modal('show')
         }
-    }, 10000)
+    }, 60000)
 })
 
 /* -- Droping Collapse -- */
