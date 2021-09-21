@@ -29,49 +29,24 @@
     <!-- Font Awesome icons (free version) -->
     <script src='https://use.fontawesome.com/releases/v5.15.3/js/all.js' crossorigin='anonymous'></script>
 
-
     <!-- Facebook Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '210040157811720');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height='1' width='1' style='display:none'
-            src='https://www.facebook.com/tr?id=210040157811720&ev=PageView&noscript=1' /></noscript>
+    <script src='./js/scripts/fb-pixel.js'></script>
+    <noscript>
+        <img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=210040157811720&ev=PageView&noscript=1' />
+    </noscript>
     <!-- End Facebook Pixel Code -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src='https://www.googletagmanager.com/gtag/js?id=UA-206855008-2'></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-206855008-2');
-    </script>
+    <script src='./js/scripts/gt-analytics.js'></script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5JP25MT');
-    </script>
+    <script src='./js/scripts/gt-manager.js'></script>
     <!-- End Google Tag Manager -->
+
+    <!-- To load custom template to using in many pages. -->
+    <script type='module' src='./js/template/custom.js'></script>
 
     <title>CIESB</title>
 </head>
@@ -79,47 +54,14 @@
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JP25MT" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
+        <iframe src='https://www.googletagmanager.com/ns.html?id=GTM-5JP25MT' height='0' width='0' style='display:none;visibility:hidden'></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- Masthead-->
-    <header>
-        <nav class='navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar'>
-            <a id='logo' class='navbar-brand' href='#page-top'><img
-                    src='./img/ciesb-imagens-gerais/logo-ciesb-escola-evangelica.png'></a>
-            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNav'
-                aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
-                <span class='navbar-toggler-icon'></span>
-            </button>
-            <div class='collapse navbar-collapse' id='navbarNav'>
-                <ul class='navbar-nav'>
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#home'>Inicio</a>
-                    </li>
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#about'>Sobre Nós</a>
-                    </li>
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#structure'>Estrutura</a>
-                    </li>
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#methodology'>Metodologia</a>
-                    </li>
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#activities'>Atividades Curriculares</a>
-                    </li>
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#testimonial'>Depoimentos</a>
-                    </li>
-                    <li class='nav-item'>
-                        <a id='enroll-button' class='nav-link' href='#' data-toggle='modal'
-                            data-target='#my-modal-dialog'>Pré-Matrícula</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+
+    <!-- Custom Header. -->
+    <my-header></my-header>
+    <!-- End Custom Header. -->
+
     <main>
         <!-- Inicio. -->
         <section id='home'>
@@ -231,7 +173,7 @@
                 <div class='row'>
                     <div id='children' class='col-md-5 align-self-center'>
                         <video width='100%' height='auto' controls>
-                            <source src="./video/ciesb-video-intro.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2">
+                            <source src='./video/ciesb-video-intro.mp4' type='video/mp4'>
                         </video>
                     </div>
                     <div id='history' class='col-md-7'>
@@ -286,6 +228,7 @@
                                     <p class='card-text text-center'>Espanhol</p>
                                     <p class='card-text text-center'>Alemão</p>
                                     <p class='card-text text-center'>Francês</p>
+                                    <p class='card-text text-center'>Italiano</p>
                                 </div>
                             </div>
                         </div>
@@ -372,6 +315,7 @@
                                     <p class='card-text text-center'>Jazz</p>
                                     <p class='card-text text-center'>Futsal</p>
                                     <p class='card-text text-center'>Francês</p>
+                                    <p class='card-text text-center'>Italiano</p>
                                 </div>
                             </div>
                         </div>
@@ -960,7 +904,7 @@
                         <form
                             action='https://ciesb.us5.list-manage.com/subscribe/post?u=918de3a02b346fef38d9db1c5&amp;id=8678cad14b'
                             method='post' id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form'
-                            class='validate' target='_blank' validate>
+                            class='validate' target='_self' validate>
                             <div class='modal-header'>
                                 <div id='mc_embed_signup_scroll'>
                                     <h2>Faça sua Pré-Matricula</h2>
@@ -1018,54 +962,9 @@
             </div>
         </div>
 
-        <footer class='p-4'>
-            <a id='logo-footer' href='#section-home'><img src='./img/ciesb-imagens-gerais/ciesb-logo-invertida.png'
-                    alt='logo da escola em preto e branco.' width='100px'></a>
-
-            <div class='row mt-4'>
-                <div class='col-md d-md-flex flex-md-column'>
-                    <div class='footer-content-text'>
-                        <a class='mt-2 mr-3' href='tel:+556135633402'><i class='fas fa-phone'></i>&nbsp;&nbsp;(61)
-                            3563-3402</a>
-                        <a class='mt-2 mr-3' href='mailto:secretaria@ciesb.com.br' target='_blank'><i
-                                class='fas fa-envelope'></i>&nbsp;&nbsp;secretaria@ciesb.com.br</a>
-                    </div>
-                    <div class='footer-content-text'>
-                        <a class='mt-2 mr-3' href='mailto:coordenacao@ciesbdf.com.br' target='_blank'><i
-                                class='fas fa-envelope'></i>&nbsp;&nbsp;coordenacao@ciesb.com.br</a>
-                        <a class='mt-2 mr-3' href='mailto:financeiro@ciesbdf.com.br' target='_blank'><i
-                                class='fas fa-envelope'></i>&nbsp;&nbsp;financeiro@ciesb.com.br</a>
-                    </div>
-                    <p class='mt-2'>CNPJ: 34.921.170/0001-20</p>
-                </div>
-                <div class='col-md'>
-                    <ul>
-                        <li><a href='#about'>Sobre Nós</a></li>
-                        <li><a href='#structure'>Estrutura</a></li>
-                        <li><a href='#methodology'>Metodologia</a></li>
-                        <li><a href='#activities'>Atividades Curriculares</a></li>
-                        <li><a href='#testimonial'></a>Depoimentos</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id='line-footer'></div>
-
-            <div class='row mt-4'>
-                <div class='col-md'>
-                    <p>Desenvolvido por AdvanceDigital &copy; Todos os direitos reservados a CIESB <span
-                            id='year'></span>.
-                    </p>
-                </div>
-                <div class='social-icons col-md align-self-end'>
-                    <a class='youtube'><i class='fab fa-youtube'></i></a>
-                    <a href='https://www.instagram.com/ciesb_df' target='_blank' class='instagram'><i
-                            class='fab fa-instagram'></i></a>
-                    <a href='https://www.facebook.com/ciesbdf' target='_blank' class='facebook'><i
-                            class='fab fa-facebook-square'></i></a>
-                </div>
-            </div>
-        </footer>
+        <!-- Custom Footer. -->
+        <my-footer></my-footer>
+        <!-- End Custom Footer. -->
     </main>
 
     <!-- My Pure ES6 - To simple things -->
