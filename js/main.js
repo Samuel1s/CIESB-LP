@@ -5,9 +5,6 @@ window.addEventListener('scroll', () => {
    document.querySelector('nav').classList.toggle('sticky', window.scrollY > 0)
 })
 
-/* -- Year to Copyright -- */
-document.querySelector('#year').innerHTML = new Date().getFullYear()
-
 /* -- Form Validation -- */
 const formEl = document.querySelector('#mc-embedded-subscribe-form')
 const emailEl = document.querySelector('#mce-EMAIL')

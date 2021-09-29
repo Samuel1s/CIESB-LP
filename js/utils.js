@@ -3,7 +3,7 @@ let check = false
 
 /* -- Carousel Timeout -- */
 $('.carousel').carousel({
-    interval: 4000
+    interval: 4000 
 })
 
 /* -- Open Dialog -- */

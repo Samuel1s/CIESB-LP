@@ -67,6 +67,10 @@ class MyFooter extends HTMLElement {
                             <a class='mt-2 mr-3' href='mailto:financeiro@ciesbdf.com.br' target='_blank'><i
                                     class='fas fa-envelope'></i>&nbsp;&nbsp;financeiro@ciesb.com.br</a>
                         </div>
+                        <div class='footer-content-text'>
+                            <a class='mt-2 mr-3' href='mailto:oportunidades.ciesbdf@gmail.com' target='_blank'><i
+                                    class='fas fa-envelope'></i>&nbsp;&nbsp;Trabalhe Conosco</a>
+                        </div>
                         <p class='mt-2'>CNPJ: 34.921.170/0001-20</p>
                     </div>
                     <div class='col-md'>
@@ -85,7 +89,7 @@ class MyFooter extends HTMLElement {
                 <div class='row mt-4'>
                     <div class='col-md'>
                         <p>Desenvolvido por AdvanceDigital &copy; Todos os direitos reservados a CIESB <span
-                                id='year'></span>.
+                                id='year'>${new Date().getFullYear()}</span>.
                         </p>
                     </div>
                     <div class='social-icons col-md align-self-end'>

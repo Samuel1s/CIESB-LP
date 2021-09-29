@@ -196,10 +196,13 @@ span {
 
 #children {
   height: 400px;
-  padding: 2em;
+  padding: 3em 2em;
   display: inline-flex;
-  align-items: center;
-  background-color: rgb(250, 76, 51, 0.9);
+  background-color: rgba(250, 76, 51, 0.9);
+}
+
+#children video {
+  background-color: black;
 }
 
 #history {
@@ -417,7 +420,7 @@ span {
 #mc_embed_signup {
   background: #fff;
   clear: left;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 #enroll-button {
@@ -425,7 +428,6 @@ span {
   font-size: 15px;
   border-radius: 5px;
   background-color: var(--orange-1);
-
 }
 
 #enroll-button:hover {
@@ -436,12 +438,12 @@ span {
 
 input:required:invalid {
   color: var(--red-1);
-  outline-color:  var(--red-1);
+  outline-color: var(--red-1);
 }
 
-input:required:valid { 
+input:required:valid {
   color: black;
-  outline-color: var(--blue-3); 
+  outline-color: var(--blue-3);
 }
 /* -- Footer. -- */
 
