@@ -157,6 +157,21 @@ span {
   color: var(--purple-2);
 }
 
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  right: 0;
+  left: 0;
+  padding: 2em 0;
+  background: white;
+  transition: all 400ms ease-out;
+  -webkit-transition: all 400ms ease-out;
+}
+
+.cookie-container.show-cookie {
+  bottom: 0;
+}
+
 /* -- Section 2 - Who are us. -- */
 
 #about {

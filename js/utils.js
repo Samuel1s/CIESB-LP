@@ -1,5 +1,5 @@
 // jQuery - Using with Bootstrap.
-let check = false
+let check = false // If the person click in button before 60 seconds.
 
 /* -- Carousel Timeout -- */
 $('.carousel').carousel({
@@ -7,13 +7,13 @@ $('.carousel').carousel({
 })
 
 /* -- Open Dialog -- */
-$('#enroll-button').on('click', function(){
+$('#enroll-button').on('click', function() {
     check = true
-})
-
+}) 
+    
 $(document).ready(function () {
     setTimeout(function() {
-        if(check !== true) {
+        if(!check && !localStorage.getItem('thisPersonSubmittedForm')) {
             $('#my-modal-dialog').modal('show')
         }
     }, 60000)
