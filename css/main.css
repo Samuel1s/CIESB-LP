@@ -564,8 +564,13 @@ footer a:hover {
 
   /* -- Section 8 -- */
   #pestalozzi-description {
-    height: 220px;
-    padding-top: 0.5em;
+    padding-top: 1em;
+  }
+
+  #pestalozzi-description div {
+    height: 200px;
+    padding-top: 1em;
+    overflow-y: auto;
   }
 
   /* -- Section 9 -- */
