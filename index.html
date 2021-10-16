@@ -100,6 +100,31 @@
             </article>
         </section>
 
+        <!-- CScholarship Contest Event. -->
+        <section class='pt-5'>
+            <article class='container'>
+                <h2><strong>CONCURSO DE BOLSAS</strong></h2>
+                <div class='d-flex flex-row align-items-center mb-3'>
+                    <div class='line'></div><span class='ml-2'>Bolsas de até 100%</span>
+                </div>
+                <p>
+                    Está aberto o período de inscrição para o concurso de bolsas no CIESB entre os dias <strong>08/11 à
+                        26/11</strong>.
+                    É exclusivo para alunos do <strong>4º a 7º ano</strong> e é válido para o ano de 2022.
+                    Para saber mais leia mais o nosso <a
+                        href='./pdf/EDITAL_DE_ABERTURA_DO_1º_CONCURSO_DE_BOLSAS_DA_ESCOLA_CIESB.pdf'
+                        target='_blank'>edital.</a>
+                </p>
+                <p>
+                    <strong>ATENÇÃO!</strong>
+                    As vagas deste concurso são limitadas, então se inscreva o quanto antes para garantir a vaga do seu
+                    filho.
+                </p>
+                <button id='contest-button' type='button' class='btn btn-info' data-toggle='modal'
+                    data-target='#my-contest-modal-dialog'>QUERO PARTICIPAR</button>
+            </article>
+        </section>
+
         <!-- Quem somos nós. -->
         <section id='about' class='py-5'>
             <article class='container'>
@@ -405,8 +430,8 @@
                     <div class='line'></div><span class='ml-2'>O MELHOR DA EUROPA PARA O SEU FILHO</span>
                 </div>
                 <p>
-                    Com base na metodologia de Johann Heinrich Pestalozzi, um dos mais famosos educador suíço, o CIESB -
-                    Centro Internacional Evangélico Suíço Brasileiro adotada uma abordagem interdisciplinar, com foco na
+                    Com base na metodologia de Johann Heinrich Pestalozzi, um dos mais famosos educador suíço. O CIESB -
+                    Centro Internacional Evangélico Suíço Brasileiro adota uma abordagem interdisciplinar, com foco na
                     construção do conhecimento, pautada no desenvolvimento de senso crítico e de habilidades que
                     promovam a percepção global e a conexão com o mundo. Visando uma educação baseada na aprendizagem
                     ativa e na participação do estudante na construção de conhecimentos.
@@ -453,7 +478,7 @@
                         <div class='tab-content p-3' id='nav-tabContent'>
                             <div class='tab-pane fade show active' id='list-ensino' role='tabpanel'
                                 aria-labelledby='list-ensino-list'>
-                                <p class='m-0'>Pestalozzi afimarva que a função principal do ensino
+                                <p class='m-0'>Pestalozzi afirmava que a função principal do ensino
                                     é levar as crianças a desenvolver suas habilidades naturais e inatas. É a idéia do
                                     “aprender fazendo”. Segundo ele, o amor deflagra o processo de auto-educação. A
                                     criança é um ser puro, bom em sua essência e possuidor de uma natureza divina que
@@ -904,7 +929,7 @@
                                 </ul>
                                 Por solicitação das nossas famílias, em 2021, abrimos o Ensino Fundamental – Anos
                                 Finais. Ele está sendo implementado gradativamente ano após ano, por este motivo, em
-                                2022 estaremos inaulgurando o 7º ano.
+                                2022 estaremos inaugurando o 7º ano.
                             </div>
                         </div>
                     </div>
@@ -921,7 +946,7 @@
                         <div id='collapseFour' class='collapse show' aria-labelledby='headingFour'
                             data-parent='#accordionExample'>
                             <div class='card-body'>
-                                Sim. As câmeras são de uso interno da escola para maior monitoramente e segurança das
+                                Sim. As câmeras são de uso interno da escola para maior monitoramento e segurança das
                                 nossas crianças.
                             </div>
                         </div>
@@ -1019,7 +1044,29 @@
                     <a class='btn btn-primary cookie-button-acepted'>Aceitar</a>
                     <a class='ml-3 btn btn-outline-secondary cookie-button-rejected'>Recusar</a>
                 </div>
+            </article>
+        </div>
 
+        <!-- Dialog to Scholarship Contest Event. // Link inscrição: https://forms.gle/rQ9YnYU1qesmXWfC7 -->
+        <div id='my-contest-modal-dialog' class='modal fade'>
+            <article class='container'>
+                <div class='modal-dialog modal-md'>
+                    <div class='modal-content'>
+                        <div class='modal-header'>
+                            <h2 class='modal-title'>Faça a sua inscrição</h2>
+                            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                                <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>
+                        <div id='dialog-contest-body' class='modal-body'>
+                        </div>
+                        <div class='modal-footer'>
+                            <a class='btn btn-secondary' data-dismiss='modal'>Fechar</a>
+                            <a class='btn btn-primary' 
+                                target='_blank'>Inscrever-se</a>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
 

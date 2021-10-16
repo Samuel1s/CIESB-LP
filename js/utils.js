@@ -1,5 +1,5 @@
 // jQuery - Using with Bootstrap.
-let check = false // If the person click in button before 60 seconds.
+let check = false // If the person click in button before 60 seconds and contest button.
 
 /* -- Carousel Timeout -- */
 $('.carousel').carousel({
@@ -8,6 +8,11 @@ $('.carousel').carousel({
 
 /* -- Open Dialog -- */
 $('#enroll-button').on('click', function() {
+    check = true
+}) 
+
+/* -- Contest Dialog -- */
+$('#contest-button').on('click', function() {
     check = true
 }) 
     

@@ -297,7 +297,7 @@ span {
 
 /* -- Section 7 - Methodology -- */
 #methodology {
-  background-color: var(--pink-1);
+  background-color: white;
 }
 
 /* -- Section 8 - Methodology Pestalozzi -- */
@@ -460,6 +460,17 @@ input:required:valid {
   color: black;
   outline-color: var(--blue-3);
 }
+
+/* --  Modal Dialog Contest -- */
+#dialog-contest-body  {
+  height: 500px;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/ciesb-concursos/concurso-bolsa.png);
+}
+
 /* -- Footer. -- */
 
 footer {
@@ -544,6 +555,7 @@ footer a:hover {
   h4 {
     text-align: start;
   }
+  
   /* -- Section 1 -- */
   #banner-slider img {
     height: 220px;
@@ -577,6 +589,16 @@ footer a:hover {
   #polyglot-description {
     left: 0;
     padding-top: 0.5em;
+  }
+
+  /* -- Modal Dialog Contest -- */
+  #dialog-contest-body {
+    height: 270px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/ciesb-concursos/concurso-bolsa-262w.png);
   }
 
   /*-- Footer --*/
